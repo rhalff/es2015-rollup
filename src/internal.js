@@ -1,5 +1,5 @@
 export default {
   hello: function() {
-    console.log('hello');
+    return 'Hello';
   }
 };
