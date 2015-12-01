@@ -8,7 +8,11 @@
 
 Usage:
 ```bash
-$ npm run build
+$ npm run dev
+```
+
+```bash
+$ npm run dist
 ```
 
 ```bash

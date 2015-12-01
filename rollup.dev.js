@@ -1,8 +1,16 @@
-import config from './rollup.base'
+import babel from 'rollup-plugin-babel'
+import json from 'rollup-plugin-json'
 import { name } from './package'
 
-config.entry = 'src/index.js'
-config.moduleName = name
-config.dest = `build/${name}.js`
+export default {
+  entry: 'src/index.js',
+  format: 'cjs',
+  sourceMap: true,
+  dest: `es5/index.js`,
+  name: name,
 
-export default config
+  plugins: [
+    json(),
+    babel({sourceMap: true})
+  ]
+}

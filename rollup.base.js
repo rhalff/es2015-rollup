@@ -4,7 +4,6 @@ import commonjs from 'rollup-plugin-commonjs'
 import json from 'rollup-plugin-json'
 
 export default {
-  entry: 'src/index.js',
   format: 'iife',
   sourceMap: true,
 
