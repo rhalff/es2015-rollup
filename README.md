@@ -15,4 +15,4 @@ $ npm run build
 $ npm rtest
 ```
 
-Totally based on: https://github.com/CrowdHailer/lob
+Totally based on: https://github.com/CrowdHailer/rollup-karma-jasmine-example
