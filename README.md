@@ -4,8 +4,15 @@
  - npm
  - commonjs
  - Karma
+ - Jasmine
 
 Usage:
 ```bash
-$ rollup -c rollup.dev.js && node build/es2015-rollup.js
+$ npm run build
 ```
+
+```bash
+$ npm rtest
+```
+
+Totally based on: https://github.com/CrowdHailer/lob
