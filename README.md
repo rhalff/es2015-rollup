@@ -12,7 +12,11 @@ $ npm run build
 ```
 
 ```bash
-$ npm rtest
+$ npm test
+```
+
+```bash
+$ npm run lint
 ```
 
 Totally based on: https://github.com/CrowdHailer/rollup-karma-jasmine-example
