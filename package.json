@@ -9,6 +9,7 @@
   "devDependencies": {
     "babel-preset-es2015-rollup": "^1.0.0",
     "chokidar-cli": "^1.2.0",
+    "eslint": "^1.10.2",
     "jasmine-core": "^2.3.4",
     "karma": "^0.13.15",
     "karma-jasmine": "^0.3.6",
@@ -22,10 +23,11 @@
     "rollup-plugin-npm": "^1.1.0"
   },
   "scripts": {
-    "test": "npm run -s build:tests && karma start",
+    "test": "npm run build:tests && karma start",
     "watch": "chokidar './src/**/*.js' 'test/**/*.js' -c 'npm -s test'",
-    "build": "rollup -c rollup.dev.js",
-    "build:tests": "rollup -c rollup.test.js"
+    "build": "npm run test && rollup -c rollup.dev.js",
+    "lint": "eslint src test",
+    "build:tests": "npm run lint && rollup -c rollup.test.js"
   },
   "repository": {
     "type": "git",
